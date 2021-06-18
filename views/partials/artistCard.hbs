@@ -1,0 +1,15 @@
+<div class="col-md-4" style="margin-bottom: 20px;">
+  <div class="card h-100">
+    <img class="card-img-top" style="height: 350px; ;" src={{#if this.images.[0]}}
+                {{this.images.[0].url}}
+            {{else}}
+                "https://180dc.org/wp-content/uploads/2017/11/profile-placeholder.png"
+            {{/if}} alt="{{this.name}} {{this.lastName}}"/>
+    <div class="card-body">
+      <h5 class="card-title  d-flex flex-column bd-highlight mb-3">
+        {{this.name}}
+        <a class="align-self-center" style="padding-top: 20px;" href="/albums/{{this.id}}"><button class="btn btn-danger">See Albums</button></a>
+      </h5>
+    </div>
+  </div>
+</div>

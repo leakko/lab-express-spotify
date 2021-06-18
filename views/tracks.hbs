@@ -1,0 +1,17 @@
+<h1 style="margin: 10px 30px;">Tracks</h1>
+
+<ul style="margin: 35px 0 0 20px;">
+    {{#each info}}
+        <li style="list-style:none">
+            <figure>
+                <figcaption>{{this.name}}</figcaption>
+                <audio
+                    controls
+                    src={{this.preview_url}}>
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+        </li>
+    {{/each}}
+</ul>
